@@ -9,7 +9,7 @@
     setTimeout(() => {
 
         if (!window.robloxpp_installed) {
-            alert("Error: You need the Roblox++ Extension installed and Enabled!");
+            alert("Error: You need the Roblox++ Extension Installed and Enabled!");
             return;
         }
 
