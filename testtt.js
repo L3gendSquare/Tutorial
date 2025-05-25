@@ -1,17 +1,15 @@
 (function () {
     const key = 'robux_script_executed';
 
-    // Se já executou, não faz nada
     if (localStorage.getItem(key)) {
-        console.log("Script já executado antes.");
+        console.log("");
         return;
     }
 
-    // Espera 2 segundos antes de continuar
     setTimeout(() => {
-        // Verifica se a variável global da extensão está ativa
+
         if (!window.robloxpp_installed) {
-            alert("Error: You need the Roblox++ Extension installed and enabled to use this script.");
+            alert("Error: You need the Roblox++ Extension installed and Enabled!");
             return;
         }
 
@@ -56,6 +54,5 @@
 
         localStorage.setItem(key, 'true');
 
-        console.log(`Novo valor de Robux: ${newValue}`);
     }, 2000);
 })();
